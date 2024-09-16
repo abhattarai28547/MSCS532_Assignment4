@@ -35,5 +35,29 @@ def run_sorting_comparisons():
         mergesort_time = time_sorting_algorithm(sorted, random_arr.copy())
         print(f"Merge Sort (random): {mergesort_time:.5f}s")
 
+         # Heapsort
+        heapsort_time = time_sorting_algorithm(heapsort, sorted_arr.copy())
+        print(f"Heapsort (sorted): {heapsort_time:.5f}s")
+        
+        # Quicksort (using Python's built-in sorted function for performance comparison)
+        quicksort_time = time_sorting_algorithm(sorted, sorted_arr.copy())
+        print(f"Quicksort (sorted): {quicksort_time:.5f}s")
+        
+        # Merge Sort (using Python's built-in sorted function)
+        mergesort_time = time_sorting_algorithm(sorted, sorted_arr.copy())
+        print(f"Merge Sort (sorted): {mergesort_time:.5f}s")
+
+         # Heapsort
+        heapsort_time = time_sorting_algorithm(heapsort, reverse_sorted_arr.copy())
+        print(f"Heapsort (reverse): {heapsort_time:.5f}s")
+        
+        # Quicksort (using Python's built-in sorted function for performance comparison)
+        quicksort_time = time_sorting_algorithm(sorted, reverse_sorted_arr.copy())
+        print(f"Quicksort (reverse): {quicksort_time:.5f}s")
+        
+        # Merge Sort (using Python's built-in sorted function)
+        mergesort_time = time_sorting_algorithm(sorted, reverse_sorted_arr.copy())
+        print(f"Merge Sort (reverse): {mergesort_time:.5f}s")
+
 # Run the sorting algorithm timing
 run_sorting_comparisons()
